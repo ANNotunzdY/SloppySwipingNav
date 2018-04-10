@@ -123,7 +123,7 @@ open class SloppySwipingNav: UINavigationController, UIViewControllerTransitioni
             }
         }
 
-        func handlePanGesture(gestureRecognizer: UIPanGestureRecognizer) {
+        @objc func handlePanGesture(gestureRecognizer: UIPanGestureRecognizer) {
             switch gestureRecognizer.state {
             case .began:
                 transitionInProgress = true
